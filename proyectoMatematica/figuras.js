@@ -44,7 +44,7 @@ function diametroCirculo(radio) {
 const PI = Math.PI;
 
 function perimetroCirculo(radio) {
-  const diametro = diametroCirculo(radio);
+  var diametro = diametroCirculo(radio);
   return diametro * PI;
 }
 
@@ -54,62 +54,62 @@ function areaCirculo(radio) {
 
 
 function calcularPerimetroCuadrado() {
-  const input = document.getElementById("InputCuadrado");
-  const value = input.value;
+  var input = document.getElementById("InputCuadrado");
+  var value = input.value;
 
-  const perimetro = perimetroCuadrado(value);
+  var perimetro = perimetroCuadrado(value);
   alert(perimetro);
 }
 function calcularAreaCuadrado() {
-  const input = document.getElementById("InputCuadrado");
-  const value = input.value;
+  var input = document.getElementById("InputCuadrado");
+  var value = input.value;
 
-  const area = areaCuadrado(value);
+  var area = areaCuadrado(value);
   alert(area);
 }
 
 function calcularPerimetroTriangulo(){
-    const ladoUno = document.querySelector(".lado1").value;
-    const ladoDos = document.querySelector(".lado2").value;
-    const base = document.querySelector(".base").value;
+    var ladoUno = document.querySelector(".lado1").value;
+    var ladoDos = document.querySelector(".lado2").value;
+    var base = document.querySelector(".base").value;
 
-    const perimetro = perimetroTriangulo(ladoUno, ladoDos, base);
+    var perimetro = perimetroTriangulo(ladoUno, ladoDos, base);
     alert(perimetro);
 }
 function calcularAreaTriangulo(){
-    const base = document.querySelector(".base").value;
-    const altura = document.querySelector(".altura").value;
+    var base = document.querySelector(".base").value;
+    var altura = document.querySelector(".altura").value;
 
-    const area = areaTriangulo(base, altura);
+    var area = areaTriangulo(base, altura);
     alert(area);
 }
 function alturaTrianguloIsosceles(){
-    const ladoUno = document.querySelector(".lado1").value;
-    const ladoDos = document.querySelector(".lado2").value;
-    const base = document.querySelector(".base").value;
+    var ladoUno = document.querySelector(".lado1").value;
+    var ladoDos = document.querySelector(".lado2").value;
+    var base = document.querySelector(".base").value;
 
-    const h = alturaIsosceles(ladoUno, ladoDos, base);
+    var h = alturaIsosceles(ladoUno, ladoDos, base);
     alert(h);
 }
 
 function calcularDiametroCirculo(){
-    const radio = document.querySelector("#InputCirculo").value;
+    var radio = document.querySelector("#InputCirculo").value;
 
-    const diametro = diametroCirculo(radio);
+    var diametro = diametroCirculo(radio);
     console.log(radio)
     alert(diametro);
 }
 function calcularAreaCirculo(){
-    const radio = document.querySelector("#InputCirculo").value;
+    var radio = document.querySelector("#InputCirculo").value;
 
-    const area = areaCirculo(radio).toFixed(2);
+    var area = areaCirculo(radio).toFixed(2);
     console.log(area)
     alert(area);
 }
 function calcularCircunferenciaCirculo(){
-    const radio = document.querySelector("#InputCirculo").value;
+    var radio = document.querySelector("#InputCirculo").value;
 
-    const perimetro = perimetroCirculo(radio).toFixed(2);
+    var perimetro = perimetroCirculo(radio).toFixed(2);
     console.log(perimetro)
     alert(perimetro);
 }
