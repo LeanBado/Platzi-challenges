@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/estilosGenerales.css" rel="stylesheet">
+    <link href="../css/prestamo.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Plus+Jakarta+Sans:wght@300&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Prestamo personal</title>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="contenedor-menuLogo">
+                <div class="menuHamburguesa" id="menuHamburguesa">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div>
+                    <img src="/img/finanza.png" alt="figuras-geométricas">
+                    <h1>Prestamo personal</h1>
+                </div>
+            </div>
+
+            <ul class="menu" id="menu">
+                <li><a href="../">Inicio</a></li>
+                <li><a href="/figurasGeometricas/index.html">Figuras</a></li>
+                <li><a href="/descuentos/index.html">Descuentos</a></li>
+                <li><a href="/modaMediaMediana/index.html">Moda / Mediana / Media</a></li>
+                <li><a href="/endeudamiento/index.html">Endeudamiento</a></li>
+                <li><a href="/temperatura/temperatura.html">Temperatura</a></li>
+                <li  class="activo"><a href="/prestamo/prestamo.html">Prestamo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="contenedor">
+            <article>
+                <h3>Calculadora de prestamo personal</h3>
+                <p><strong>¿Qué es un préstamo personal?</strong></p>
+                <p>Es un crédito que el banco u otra entidad financiera otorga a personas naturales, que te permite obtener dinero en efectivo para satisfacer cualquier necesidad económica como pagar una deuda, financiar los estudios de tus hijos, realizar el pago de servicios, hacer un viaje en tus vacaciones y más.</p>
+                <img class="imgmedia" src="../img/prestamo.png" alt="imagen">
+
+                <p><strong>¿Cómo funciona un préstamo personal?</strong></p>
+                <p>El banco te entrega de una sola vez una cantidad fija de dinero, con la condición de que devolvés en el mediano plazo esa misma cantidad, sumando los intereses pactados. Podés saldar tu deuda en un solo pago o mediante pagos periódicos (cuotas).
+
+                    Para evaluar si sos capaz de pagar el monto solicitado, en algunos bancos usan el sistema de puntaje de crédito y según tu evaluación, determinan si te darán un préstamo personal y a qué tasa de interés. Dependiendo del historial de crédito, las tasas de interés de los préstamos personales pueden variar bastante, por lo mismo, se recomienda solicitar un préstamo solo cuando tenés seguridad de tu capacidad de pago.</p></br>
+                <p class="cita">Información tomada de <cite> <a href="https://www.bbva.com.ar/economia-para-tu-dia-a-dia/ef/prestamos/que-es-un-prestamo-personal.html" target="_blank">Banco Bbva</a></cite></p>
+            </article>
+
+            <div class="linea"></div>
+            <article>
+                <h3>Descubre lo que realmente vas a pagar:</h3>
+                <form action="">
+                    <label for="valorPrestamo">Valor del préstamo $</label>
+                    <input type="number" id="valorPrestamo" required>
+                    <label for="interes">Tasa de interés %</label>
+                    <input type="number" id="interes" required>
+                    <label for="meses">Cantidad cuotas (meses)</label>
+                    <input type="number" id="meses" required>
+
+                    <button type="button" id="button" onclick="calculate()">Calcular</button>
+                </form>
+                <div class="resultados">
+                    <h3 id="texto-condicional"></h3>
+                    <p id="texto-mensual"></p>
+                    <p class="resultado" id="resultado-mensual"></p>
+                    <p id="texto-interes"></p>
+                    <p class="resultado1" id="resultado-interes"></p>
+                    <p id="texto-total"></p>
+                    <p class="resultado2" id="resultado-total"></p>
+                </div>
+                
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <p>Desarrollado por <span>Leandro Martin Bado</span> 2022</p>
+    </footer>
+
+<script src="../js/prestamo.js"></script>
+<script src="/js/burger.js"></script>
+</body>
+</html>

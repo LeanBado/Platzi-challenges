@@ -1,0 +1,162 @@
+/* CONTENIDO */
+section h2{
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.cuadrado{
+    background-color: #fff;
+    margin: 25px auto;
+    border: 1px solid #000;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    width: 90%;
+    box-shadow: 0px 6px 4px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 6px 4px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 6px 4px 0px rgba(0,0,0,0.75);
+}
+article h3{
+    color: #001E6C;
+}
+.cuadrado h2::before{
+    content: "⬜";
+    content: url(https://img.icons8.com/external-photo3ideastudio-lineal-color-photo3ideastudio/64/000000/external-temperature-virus-photo3ideastudio-lineal-color-photo3ideastudio.png);
+    margin-right: 15px;
+}
+
+.valores, .resultados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 167px;
+    padding: 10px 0px;
+}
+.valores .resultados{
+    height: 190px;
+}
+.valores{
+    border-bottom: 2px solid #001E6C;
+}
+section p{
+    width: 230px;
+    text-align: left;
+    margin: 5px 0px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    margin: 5px 0;
+}
+input{
+    height: 25px;
+    width: 180px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #001E6C;
+    font-weight: bold;
+    font-size: 15px;
+}
+.resultadoFaren, .resultadoKel{
+    width: 150px;
+    height: 25px;
+    border: 0;
+    border-bottom: 2.5px dashed #001E6C;
+    padding-bottom: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+button{
+    background-color: #4783FE;
+    margin-top: 5px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 25px;
+    border-radius: 5px;
+    transition: background-color .3s linear;
+}
+button:hover{
+    background-color: #001E6C;
+}
+/* RESPONSIVO */
+@media screen and (min-width:480px) {
+    h2{
+        margin-right: px;
+    }
+    .cuadrado{
+        margin-top: 80px;
+    }
+    .contenedor{
+        display: flex;
+        justify-content: space-around;
+    }
+    .valores{
+        border-bottom: none;
+    }
+    .linea{
+        width: 2px;
+        height: auto;
+        background-color: #001E6C;
+    }
+}
+@media screen and (min-width:1024px) {
+    /* header img{
+        position: absolute;
+        top: 11px;
+        left: 100px;
+    } */
+    header h1{
+        display: inline-block;
+        font-size: 32px;
+        vertical-align: top;
+        margin-top: 5px;
+    }
+    .menuHamburguesa{
+        display: none;
+    }
+    nav ul li{
+        border-bottom: none;
+        margin-right: 2px;
+    }
+    nav ul li:hover{
+        background-color: transparent;
+        border-bottom: 5px solid #001E6C;
+    }
+    nav ul li a{
+        display: inline-block;
+        width: auto;
+        height: 39px;
+        padding: 10px 10px;
+    }
+    .activo{
+        background-color: transparent;
+        border-bottom: 5px solid #001E6C;
+    }
+    section h2{
+        font-size: 25px;
+    }
+    .menu{
+        max-height: 116px;
+        display: flex;
+        position: absolute;
+        top: 0px;
+        right: 10px;
+    }
+    .cuadrado{
+        max-width: 1000px;
+        /* height: 290px; */
+    }
+    .contenedor{
+        height: 230px;
+    }
+}

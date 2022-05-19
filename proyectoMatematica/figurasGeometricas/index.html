@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/estilosGenerales.css" rel="stylesheet">
+    <link href="../css/figuras.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Plus+Jakarta+Sans:wght@300&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Figuras Geométricas</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="contenedor-menuLogo">
+                <div class="menuHamburguesa" id="menuHamburguesa">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div>
+                    <img src="/img/logo.png" alt="figuras-geométricas">
+                    <h1>Figuras Geométricas</h1>
+                </div>
+            </div>
+
+            <ul class="menu" id="menu">
+                <li><a href="../">Inicio</a></li>
+                <li class="activo"><a href="../figurasGeometricas/">Figuras</a></li>
+                <li><a href="/descuentos/index.html">Descuentos</a></li>
+                <li><a href="/modaMediaMediana/index.html">Moda / Mediana / Media</a></li>
+                <li><a href="/endeudamiento/index.html">Endeudamiento</a></li>
+                <li><a href="/temperatura/temperatura.html">Temperatura</a></li>
+                <li><a href="/prestamo/prestamo.html">Prestamo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Calculadora de Areas y Perímetros</h2>
+
+        <section class="cuadrado">
+            <h2>Cuadrado</h2>
+            <div class="contenedor">
+                <article class="valores">
+                    <h3>valores</h3>
+                    <form action="">
+                        <label for="cuadrado">Ingresa los valores en centímetros</label>
+                        <input id="cuadrado" type="number" placeholder="Lado">
+                        <button type="button" id="botonCuadrado">Calcular</button>
+                    </form>
+                </article>
+
+                <div class="linea"></div>             
+                <article class="resultados">
+                    <h3>Resultados</h3>
+                    <p>El área del cuadrado es:</p>
+                    <input class="resultadoAreaCuadrado"></input>
+                    <p>El perimetro del cuadrado es:</p>
+                    <input class="resultadoPerimetroCuadrado"></input>
+                </article>
+            </div>
+        </section>
+        
+        <section class="triangulo">
+            <h2>Triangulo</h2>
+            <div class="contenedor">
+                <article class="valores">
+                    <h3>Valores</h3>
+                    <form action="">
+                        <label>Ingresa los valores en centímetros</label>
+                        <input id="trianguloLado1" type="number" placeholder="Lado 1">
+                        <input id="trianguloLado2" type="number" placeholder="Lado 2">
+                        <input id="trianguloBase" type="number" placeholder="Base">
+                        <input id="trianguloAltura" type="number" placeholder="Altura">
+                        <button type="button" id="botonTriangulo">Calcular</button>
+                        <button type="button" id="botonTrianguloIsosceles">Calcular altura triangulo isosceles</button>
+                    </form>
+                </article>
+
+                <div class="linea"></div>
+                <article class="resultados">
+                    <h3>Resultados</h3>
+                    <p>El área del triangulo es:</p>
+                    <input class="resultadoAreaTriangulo"></input>
+                    <p>El perímetro del triangulo es:</p>
+                    <input class="resultadoPerimetroTriangulo"></input>
+                    <p>Si es un triangulo isosceles, la altura es:</p>
+                    <input class="resultadoTrianguloIsosceles"></input>
+                </article>
+            </div>
+        </section>
+
+        <section class="circulo">
+            <h2>Circulo</h2>
+            <div class="contenedor">
+                <article class="valores">
+                    <h3>Valores</h3>
+                    <form action="">
+                        <label for="circuloRadio">Ingresa los valores en centímetros</label>
+                        <input id="circuloRadio" type="number" placeholder="Radio">
+                        <button type="button" id="botonCirculo">Calcular</button>
+                    </form>
+                </article>
+
+                <div class="linea"></div>
+                <article class="resultados">
+                    <h3>Resultados</h3>
+                    <p>El diámetro del circulo es:</p>
+                    <input class="resultadoDiametro"></input>
+                    <p>El circunferencia del circulo es:</p>
+                    <input class="resultadoCircunferencia"></input>
+                    <p>El área del circulo es:</p>
+                    <input class="resultadoAreaCirculo"></input>
+                </article>
+            </div>
+        </section>
+    </section>
+
+    <footer>
+        <p>Desarrollado por <span>Leandro Martin Bado</span> 2022</p>
+    </footer>
+<script src="../js/figuras.js"></script>
+<script src="/js/burger.js"></script>
+</body>
+</html>

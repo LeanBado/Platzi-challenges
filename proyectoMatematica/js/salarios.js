@@ -97,15 +97,15 @@ function esPar(nro){
 }
 
 
-
-
-const salariosArg = argentina.map(function(salario){
-    return salario.salary
+const salariosArg = argentina.map(function(sueldo){
+    return sueldo.salary
 });
+
 
 const salariosOrdenados = salariosArg.sort(function(salarioA, salarioB){
     return salarioA - salarioB;
 })
+
 
 function medianaSalarios(lista){
     const mitadLista = parseInt(lista.length / 2);
@@ -123,13 +123,10 @@ function medianaSalarios(lista){
         return mediana = lista[mitadLista];
     }
 }
-console.log(medianaSalarios(salariosOrdenados));
 
 //mediana del top 10% salarios
 const corte = (salariosOrdenados.length *90) /100;
 const contador = salariosOrdenados.length - corte
 const salariosTop10 = salariosOrdenados.splice(corte, contador);
 
-
 const medianaSalarioTop10 = medianaSalarios(salariosTop10);
-console.log(medianaSalarioTop10)

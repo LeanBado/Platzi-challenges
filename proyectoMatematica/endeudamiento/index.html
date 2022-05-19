@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/estilosGenerales.css" rel="stylesheet">
+    <link href="../css/endeudamiento.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Plus+Jakarta+Sans:wght@300&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Capacidad de deuda y prestamo</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="contenedor-menuLogo">
+                <div class="menuHamburguesa" id="menuHamburguesa">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div>
+                    <img src="/img/sueldo.png" alt="figuras-geométricas">
+                    <h1>Endeudamiento y Prestamo</h1>
+                </div>
+            </div>
+
+            <ul class="menu" id="menu">
+                <li><a href="../">Inicio</a></li>
+                <li><a href="/figurasGeometricas/index.html">Figuras</a></li>
+                <li><a href="/descuentos/index.html">Descuentos</a></li>
+                <li><a href="/modaMediaMediana/index.html">Moda / Mediana / Media</a></li>
+                <li class="activo"><a href="/endeudamiento/index.html">Endeudamiento</a></li>
+                <li><a href="/temperatura/temperatura.html">Temperatura</a></li>
+                <li><a href="/prestamo/prestamo.html">Prestamo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="contenedor">
+            <article>
+                <h3>¿Qué es la capacidad de endeudamiento?</h3>
+                <p>El capital máximo por el que una persona se puede endeudar sin poner en peligro su integridad financiera. Los expertos calculan que <strong>el límite de capacidad de endeudamiento es entre un 35% y 40% de los ingresos netos mensuales</strong>.</p><br>
+                <img src="../img/deudas.jpg" alt="deudas" class="imgDeudas">
+                <p>Una forma de conocer con exactitud nuestra capacidad de pago es <strong>saber cuáles son todos los ingresos y gastos fijos que tenemos cada mes</strong>.</p><br>
+                <p>Lo recomendable es <strong> no excederse del 40% de los ingresos netos mensuales</strong> en cubrir obligaciones financieras.</p><br>
+                <p class="cita">Información tomada del sitio web <cite><a href="https://www.bbva.com/es/mido-capacidad-endeudamiento/" target="_blank">bbva</a></cite>.</p>
+            </article>
+
+            <div class="linea"></div>
+            <article>
+                <h3>Calcular capacidad de endeudamiento</h3>
+                <form action="">
+                    <label for="mensual">Escribe tu Ingreso Mensual $</label>
+                    <input id="mensual" type="number" placeholder="Ejemplo 12000">
+                    <label for="gastos">Escribe tus Gastos Fijos $</label>
+                    <input type="number" name="" id="gastos" placeholder="Ejemplo 4500">
+                    <label for="">Escoge el límite de capacidad de endeudamiento</label>
+                    <select name="" id="capacidad">
+                        <option value="20">20%</option>
+                        <option value="25">25%</option>
+                        <option value="35">35%</option>
+                        <option value="40">40%</option>
+                    </select>
+                    <button type="button" id="boton">Calcular</button>
+                </form>
+                <div class="resultados">
+                    <h3>Resultado</h3>
+                    <p>Tu capacidad de endeudamiento es:</p>
+                    <p class="resultado"></p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <p>Desarrollado por <span>Leandro Martin Bado</span>2022</p>
+    </footer>
+<script src="../js/endeudamiento.js"></script>
+<script src="/js/burger.js"></script>
+</body>
+</html>
