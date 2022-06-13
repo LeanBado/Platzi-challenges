@@ -1,1 +1,1 @@
-different exercises proposed by teachers between classes
+proyectoMatematica es la página final al challenge propuesto
